@@ -1,0 +1,47 @@
+.active {
+    color: #2adaff !important;
+    font-weight: 700;
+    text-decoration: none;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.pepe {
+    font-weight: 700;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.pepe:hover,
+.pepe:focus {
+    background-size: 100% 2px;
+    color: #2adaff;
+}
+
+
+
+.navbar {
+    padding: 30px;
+    /* background-color: #1f203a;
+    color: white !important; */
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.sticky {
+    background-color: #00305c52;
+    transition: all 0.5s ease-out 0s;
+    box-shadow: 0px 15px 15px 0px rgba(9, 5, 29, 0.171);
+    backdrop-filter: blur(15px);
+    padding: 20px !important;
+}
