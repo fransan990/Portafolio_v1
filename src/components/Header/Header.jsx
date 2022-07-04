@@ -3,6 +3,8 @@ import { loadFull } from "tsparticles";
 import Image from "react-bootstrap/Image";
 import options from "../../config/particle-config"
 import { Container, Col, Row, } from "react-bootstrap";
+import About from "../About/About";
+
 import "./Header.css"
 
 
@@ -33,21 +35,30 @@ const Header = () => {
                     loaded={particlesLoaded}
                     options={options}
                 />
+
                 <Image
                     src={image1}
                     className="image img-fluid"
                 />
 
             </Col>
-            <Col lg={6} className="position-relative mx-auto m-0 text-center image2Esfera">
+            <Col lg={12} className="position-relative image2Esfera">
+                <Row>
+                    <Col lg={6} className="mx-auto m-0 text-center">
 
-                <Image
-                    src={image2}
-                    roundedCircle
-                    className="image2Tamaño"
-                />
+                        <Image
+                            src={image2}
+                            roundedCircle
+                            className="image2Tamaño"
+                        />
 
-
+                        <Row>
+                            <Col lg={12} className="h1 text-center">
+                                <About />
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
             </Col>
         </Row>
 
