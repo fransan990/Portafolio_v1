@@ -6,6 +6,7 @@ import { Container, Col, Row, } from "react-bootstrap";
 import About from "../About/About";
 
 import "./Header.css"
+import AnimatedWriting from "../AnimatedWriting/AnimatedWriting";
 
 
 const Header = () => {
@@ -57,6 +58,11 @@ const Header = () => {
                                 <About />
                             </Col>
                         </Row>
+                    </Col>
+                    <Col lg={12} className="p-5 mt-5">
+                        <AnimatedWriting />
+
+
                     </Col>
                 </Row>
             </Col>
