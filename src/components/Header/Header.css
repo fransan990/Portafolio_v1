@@ -16,3 +16,8 @@
     height: 415px;
     border: 8px double white;
 }
+
+.separacionSuperior {
+    margin-top: 110px;
+    padding: 130px;
+}

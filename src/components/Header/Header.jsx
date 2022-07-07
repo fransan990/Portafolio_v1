@@ -54,13 +54,29 @@ const Header = () => {
                         />
 
                         <Row>
-                            <Col lg={12} className="h1 text-center">
+                            <Col lg={12} className="text-center">
                                 <About />
                             </Col>
                         </Row>
                     </Col>
-                    <Col lg={12} className="p-5 mt-5">
-                        <AnimatedWriting />
+                    <Col lg={12} className="mx-5 separacionSuperior">
+                        <Row>
+
+                            <AnimatedWriting />
+
+                            <Col lg={6}>
+                                Foto 1
+
+                            </Col>
+                            <Col lg={12}>
+                                Foto 2
+                            </Col>
+                        </Row>
+
+
+
+
+
 
 
                     </Col>
