@@ -13,6 +13,11 @@ const Header = () => {
 
     const image1 = "../../../images/montañaNieve3.jpeg"
     const image2 = "../../../images/yo2.png"
+    const image3 = "../../../images/reactHooks.jpeg"
+    const image4 = "../../../images/IronhackNoche.jpeg"
+
+
+
 
 
     const particlesInit = async (main) => {
@@ -62,23 +67,26 @@ const Header = () => {
                     <Col lg={12} className="mx-5 separacionSuperior">
                         <Row>
 
-                            <AnimatedWriting />
+
 
                             <Col lg={6}>
-                                Foto 1
+                                <AnimatedWriting />
+
+                                <Image
+                                    src={image3}
+                                    className="img-fluid"
+
+                                />
 
                             </Col>
-                            <Col lg={12}>
-                                Foto 2
+                            <Col lg={6}>
+                                <Image
+                                    src={image4}
+                                    className="img-fluid"
+
+                                />
                             </Col>
                         </Row>
-
-
-
-
-
-
-
                     </Col>
                 </Row>
             </Col>

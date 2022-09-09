@@ -13,7 +13,7 @@ const About = () => {
             readMore_btn.innerHTML = 'Ver menos'
         }
         else {
-            readMore_btn.innerHTML = 'Veer mas'
+            readMore_btn.innerHTML = 'Ver mas'
         }
     }
 

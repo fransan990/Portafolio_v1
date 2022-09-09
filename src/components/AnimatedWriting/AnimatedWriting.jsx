@@ -10,9 +10,9 @@ const AnimatedWriting = () => {
 
     return (
 
-        <Col lg={6} className="mt-5">
+        <Col lg={12} className="mt-5 mb-5">
 
-            <div className='display-4'>
+            <div className='display-5'>
                 Yo soy
 
                 <span style={{ fontWeight: 'bold' }}>
