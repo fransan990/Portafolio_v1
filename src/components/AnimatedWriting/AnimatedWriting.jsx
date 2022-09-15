@@ -1,5 +1,5 @@
 import { useTypewriter } from 'react-simple-typewriter'
-import { Container, Col, Row, } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 const AnimatedWriting = () => {
 
@@ -21,11 +21,6 @@ const AnimatedWriting = () => {
 
             </div>
         </Col>
-
-
     )
-
-
-
 }
 export default AnimatedWriting

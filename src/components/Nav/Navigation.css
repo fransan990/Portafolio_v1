@@ -59,3 +59,8 @@ a {
     transition-timing-function: ease-out;
 
 }
+
+.btn-download:hover {
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
