@@ -9,8 +9,6 @@ const Header = () => {
 
     const image1 = "../../../images/montañaNieve3.jpeg"
 
-
-
     const particlesInit = async (main) => {
         console.log(main);
         await loadFull(main);

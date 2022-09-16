@@ -1,9 +1,12 @@
 import { Container, Row, Col, Button } from "react-bootstrap"
 import AnimatedWriting from "../AnimatedWriting/AnimatedWriting";
 import Image from "react-bootstrap/Image";
-
-
 import "./About.css"
+import Biography from "../Biography/Biography";
+import { FaAngular } from "react-icons/fa"
+import { SiAntdesign } from "react-icons/si"
+
+
 
 const About = () => {
 
@@ -27,9 +30,9 @@ const About = () => {
 
     return (
 
-
         <Col lg={12} className="position-relative image2Esfera">
             <Row>
+
                 <Col lg={6} className="mx-auto m-0 text-center">
 
                     <Image
@@ -45,8 +48,6 @@ const About = () => {
                                     <Col lg={12} className="text-center">
                                         <p className="h4 mx-5 mt-3" id="Sobre Mi">
                                             Hola soy Fran soy Soy Desarrollador Web Full Stack con background en un grado superior en desarrollo web de aplicaciones y con un bootcamp de desarrollador full stack  de Ironhack
-
-
                                             <span id="hideText" className="hideText h4 mt-3">
                                                 De pequeño descubrí que me apasionaba el mundo de la informática en concreto a la programación porque veía que me permitía aplicar mi creatividad creando cualquier producto propio ahora busco avanzar en las habilidades de programación y desarrollo de bases de datos me encantaría poder colaborar en cualquier proyecto que me ayude a añadir o mejorar mis habilidades así como también me ayude a avanzar en mi carrera como desarrollador.
                                             </span>
@@ -58,8 +59,10 @@ const About = () => {
                         </Col>
                     </Row>
                 </Col>
+
                 <Col lg={12} className="mx-5 separacionSuperior">
                     <Row>
+
                         <Col lg={6} className="columnasFondoGris">
                             <Row>
                                 <Col lg={12}>
@@ -77,7 +80,6 @@ const About = () => {
                             </Row>
                         </Col>
 
-
                         <Col lg={6} className="columnasFondoGris" >
                             <Row>
                                 <Col lg={12}>
@@ -89,18 +91,54 @@ const About = () => {
                                     />
                                 </Col>
                                 <Col lg={12} className="mt-5">
+                                    <Row>
+                                        <Col lg={10}>
+                                            <h5>
+                                                Actualmente sigo formandome aprendiendo tecnologias
+                                            </h5>
 
-                                    aqui va lo de informacion sobre ti
+                                            <hr />
+
+                                            <Row>
+                                                <Col lg={6}>
+                                                    <p className="fs-5">
+                                                        <FaAngular />
+                                                        <span className="mx-4">
+                                                            Angular
+                                                        </span>
+                                                    </p>
+                                                </Col>
+                                                <Col lg={6}>
+                                                    <p className="fs-5">
+                                                        <SiAntdesign />
+                                                        <span className="mx-4">
+                                                            Antdesign
+                                                        </span>
+                                                    </p>
+                                                </Col>
+
+                                            </Row>
+
+
+
+
+                                        </Col>
+                                    </Row>
+                                    {/* actualmente estudiando Angular y Testing */}
+                                    {/* Creamos el mejor producto que estás buscando */}
+                                    {/* <Biography /> */}
+
+
+
                                 </Col>
                             </Row>
                         </Col>
                     </Row>
                 </Col>
+
                 <Col lg={12} className="fondoGris"></Col>
-            </Row>
-        </Col>
-
-
+            </Row >
+        </Col >
     )
 
 }

@@ -1,5 +1,6 @@
 import { useTypewriter } from 'react-simple-typewriter'
 import { Col } from "react-bootstrap";
+import "./AnimatedWriting.css"
 
 const AnimatedWriting = () => {
 
@@ -11,14 +12,11 @@ const AnimatedWriting = () => {
     return (
 
         <Col lg={12} className="mt-5 mb-5">
-
             <div className='display-4'>
                 Yo soy
-
                 <span style={{ fontWeight: 'bold' }}>
                     {text}
                 </span>
-
             </div>
         </Col>
     )

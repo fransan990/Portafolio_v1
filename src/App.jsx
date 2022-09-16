@@ -6,14 +6,11 @@ import HomePage from './pages/HomePage/HomePage';
 
 function App() {
   return (
-    <>
-
-      {/* <Navigation />
-      <Header /> */}
-      <HomePage />
 
 
-    </>
+    <HomePage />
+
+
 
   );
 }

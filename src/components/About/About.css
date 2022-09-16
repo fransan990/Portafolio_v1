@@ -1,6 +1,4 @@
 .readMore_btn {
-
-
     font-weight: 700;
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);
@@ -14,10 +12,7 @@
     cursor: pointer;
     border: none;
     background-color: white;
-
 }
-
-
 
 .readMore_btn:hover,
 .readMore_btn:focus {
@@ -25,18 +20,72 @@
     color: black;
 }
 
-/* .readMore_btn:hover {
-    box-shadow: none;
-    background-color: black;
-    color: #fff;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
-} */
-
-
 .hideText {
     display: none;
 }
 
 .showText {
     display: block;
+}
+
+.image2Esfera {
+    position: relative;
+    bottom: 300px;
+}
+
+.image2Tamaño {
+    background-size: cover;
+    width: 415px;
+    height: 415px;
+    border: 8px double white;
+}
+
+.separacionSuperior {
+    margin-top: 110px;
+    padding: 130px;
+}
+
+.fondoGris {
+    position: relative;
+    bottom: 462px;
+    background-color: #697288;
+    padding: 250px;
+}
+
+.columnasFondoGris {
+    z-index: 1;
+}
+
+.imagenFondoGris2 {
+    height: 600px;
+    width: 600px;
+    box-shadow: 2px 2px 5px #999;
+    border-radius: 2px;
+}
+
+.imagenFondoGris1 {
+    height: 600px;
+    width: 661px;
+    box-shadow: 2px 2px 5px #999;
+    border-radius: 12px;
+
+}
+
+.me-2 {
+    color: #17b9ff;
+}
+
+.tech-icons {
+    font-size: 4.5em;
+    margin: 15px;
+    padding: 10px;
+    opacity: 0.93;
+    border: 1.7px solid rgba(200, 137, 230, 0.637);
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 5px;
+    display: table;
+    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
+    overflow: hidden;
+    transition: all 0.4s ease 0s;
 }
