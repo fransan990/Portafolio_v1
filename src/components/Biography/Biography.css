@@ -1,0 +1,43 @@
+.linea {
+    border-right: 2px solid black;
+
+}
+
+.arriba {
+    position: relative;
+    bottom: 493px;
+
+}
+
+.h {
+
+    animation: identifier 3s infinite;
+}
+
+.o {
+    animation: identifier 3s infinite;
+
+}
+
+.i {
+    animation: identifier 3s infinite;
+}
+
+
+
+
+@keyframes identifier {
+    0% {
+        color: #000;
+    }
+
+    50% {
+        text-shadow: black 0.1em 0.1em 0.2em
+    }
+
+    100% {
+        color: black;
+
+    }
+
+}

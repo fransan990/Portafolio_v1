@@ -124,12 +124,7 @@ const About = () => {
 
                                         </Col>
                                     </Row>
-                                    {/* actualmente estudiando Angular y Testing */}
-                                    {/* Creamos el mejor producto que estás buscando */}
                                     {/* <Biography /> */}
-
-
-
                                 </Col>
                             </Row>
                         </Col>
