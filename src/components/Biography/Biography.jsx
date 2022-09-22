@@ -5,17 +5,9 @@ import "./Biography.css"
 
 const Biography = () => {
 
-
-    const [items, setItems] = useState([])
-
-    const filterElement = () => {
-        return updateItems = biografia.filter(ele => {
-            return ele.categoria === "educación"
-        })
-
-    }
-
-
+    const updateItems = biografia.filter(ele => {
+        return ele.categoria == "educación"
+    })
 
 
 
@@ -67,8 +59,12 @@ const Biography = () => {
 
         <Col lg={12} className="text-end arriba">
             <Row>
+
+                <Col lg={12} className="text-center pb-5 mb-5 ">
+                    <h3 className="display-1">Educación</h3>
+                </Col>
                 <Col lg={6} className="linea">
-                    <div className="display-1 ">
+                    <div className="display-1 margen">
                         <p className="h">Crear</p>
 
                         <p className="o">productos</p>
@@ -79,12 +75,9 @@ const Biography = () => {
                 </Col>
                 <Col lg={6}>
                     <Row>
-                        <Col lg={7}>
+                        <Col lg={9}>
 
 
-                            <p className="mt-5 text-center mb-5">
-                                El mundo digital es muy amplio y a mi me gustaria formar parte de el gracias a todos los conocimientos que he aprendido durante todo este tiempo, aqui os muestro mi biografia y lo que puedo ofrecer
-                            </p>
                             <div className="d-flex justify-content-around">
 
                                 {/* <Button className="btn-warning" onClick={() => filterElement("service")}>Servicios</Button> */}
@@ -99,7 +92,7 @@ const Biography = () => {
 
 
                                         {
-                                            items.map((elem) => {
+                                            updateItems.map((elem) => {
                                                 const { id, nombre, imagen, categoria, tecnologias, descripcion } = elem
                                                 return (
                                                     <Col lg={12}>
@@ -123,7 +116,6 @@ const Biography = () => {
 
                                             })
                                         }
-
                                     </Row>
 
                                 </Col>

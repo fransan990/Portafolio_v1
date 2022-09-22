@@ -5,7 +5,7 @@
 
 .arriba {
     position: relative;
-    bottom: 493px;
+    bottom: 573px;
 
 }
 
@@ -23,6 +23,9 @@
     animation: identifier 3s infinite;
 }
 
+.margen {
+    margin-top: 80px;
+}
 
 
 
