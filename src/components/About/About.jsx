@@ -118,13 +118,8 @@ const About = () => {
                                                 </Col>
 
                                             </Row>
-
-
-
-
                                         </Col>
                                     </Row>
-                                    {/* <Biography /> */}
                                 </Col>
                             </Row>
                         </Col>

@@ -12,8 +12,6 @@ const HomePage = () => {
             <Header />
             <About />
             <Biography />
-
-
         </>
 
     )

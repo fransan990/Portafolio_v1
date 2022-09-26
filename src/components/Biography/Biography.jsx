@@ -9,53 +9,7 @@ const Biography = () => {
         return ele.categoria == "educación"
     })
 
-
-
     return (
-        // <Row>
-        //     <Col lg={12}>
-        //         <div className="d-flex justify-content-around">
-
-        //             <Button className="btn-warning" onClick={() => filterElement("service")}>Todo</Button>
-        //         </div>
-        //     </Col>
-        //     <Col lg={12}>
-        //         <Row>
-        //             {
-        //                 items.map((elem) => {
-        //                     const { id, nombre, imagen, categoria, tecnologias, descripcion } = elem
-        //                     return (
-        //                         <Col lg={12}>
-        //                             <Row>
-        //                                 <Col lg={12}>
-        //                                     <p>{nombre}</p>
-        //                                 </Col>
-        //                                 <Col lg={12}>
-        //                                     <p>{tecnologias}</p>
-        //                                 </Col>
-        //                                 <Col lg={12}>
-
-
-        //                                     <p>{descripcion}</p>
-
-        //                                 </Col>
-
-        //                             </Row>
-        //                         </Col>
-        //                     )
-
-        //                 })
-        //             }
-        //         </Row>
-        //     </Col>
-
-
-
-
-
-
-
-        // </Row>
 
         <Col lg={12} className="text-end arriba">
             <Row>
@@ -66,7 +20,6 @@ const Biography = () => {
                 <Col lg={6} className="linea">
                     <div className="display-1 margen">
                         <p className="h">Crear</p>
-
                         <p className="o">productos</p>
                         <p className="i">innovadores</p>
 
@@ -76,20 +29,10 @@ const Biography = () => {
                 <Col lg={6}>
                     <Row>
                         <Col lg={9}>
-
-
-                            <div className="d-flex justify-content-around">
-
-                                {/* <Button className="btn-warning" onClick={() => filterElement("service")}>Servicios</Button> */}
-                                {/* <Button className="btn-warning" onClick={() => filterElement("educación")}>Educación</Button>
-                                <Button className="btn-warning" onClick={() => filterElement("experiencia")}>Experencia</Button> */}
-
-                            </div>
+                            <div className="d-flex justify-content-around"></div>
                             <Row>
                                 <Col lg={12} className="text-start mt-5">
                                     <Row>
-
-
 
                                         {
                                             updateItems.map((elem) => {
