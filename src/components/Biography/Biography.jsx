@@ -9,7 +9,30 @@ const Biography = () => {
         return ele.categoria == "educación"
     })
 
+    // const [items, setItems] = useState(biografia)
+
+    // const filterElement = (categorias) => {
+    //     const updateItems = biografia.filter(ele => {
+    //         return ele.categoria == categorias
+    //     })
+    //     setItems(updateItems)
+    // }
+
     return (
+        // <Row>
+
+        //     <Col lg={12}>
+        //         <div className="d-flex justify-content-around">
+        //             <Button className="btn-warning" onClick={() => filterElement("todo")}>Todo</Button>
+        //             <Button className="btn-warning">HTML</Button>
+        //             <Button className="btn-warning">Servidor</Button>
+        //             <Button className="btn-warning">Cliente</Button>
+        //             <Button className="btn-warning">React</Button>
+        //             <Button className="btn-warning" onClick={() => setItems(Proyectos)}>Full</Button>
+        //         </div>
+        //     </Col>
+
+        // </Row>
 
         <Col lg={12} className="text-end arriba">
             <Row>

@@ -2,10 +2,8 @@ import { Container, Row, Col, Button } from "react-bootstrap"
 import AnimatedWriting from "../AnimatedWriting/AnimatedWriting";
 import Image from "react-bootstrap/Image";
 import "./About.css"
-import Biography from "../Biography/Biography";
 import { FaAngular } from "react-icons/fa"
 import { SiAntdesign } from "react-icons/si"
-
 
 
 const About = () => {

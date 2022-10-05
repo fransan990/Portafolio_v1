@@ -23,7 +23,7 @@ const Navigation = () => {
 
     window.addEventListener("scroll", scrollHandler);
 
-    const pages = ['Inicio', 'Sobre Mi', 'Servicios', 'Contacta'];
+    const pages = ['Inicio', 'Sobre Mi', 'Educación', 'Proyectos', 'Servicios', 'Contacta'];
 
     return (
         <Container>

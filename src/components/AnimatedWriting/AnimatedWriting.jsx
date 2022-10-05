@@ -14,7 +14,7 @@ const AnimatedWriting = () => {
         <Col lg={12} className="mt-5 mb-5">
             <div className='display-4'>
                 Yo soy
-                <span style={{ fontWeight: 'bold' }}>
+                <span className='fw-bold'>
                     {text}
                 </span>
             </div>
