@@ -4,6 +4,8 @@ import Image from "react-bootstrap/Image";
 import "./About.css"
 import { FaAngular } from "react-icons/fa"
 import { SiAntdesign } from "react-icons/si"
+import Biography from "../Biography/Biography";
+
 
 
 const About = () => {
@@ -80,16 +82,23 @@ const About = () => {
 
                         <Col lg={6} className="columnasFondoGris" >
                             <Row>
-                                <Col lg={12}>
+                                <Col lg={12} className="colocacion">
+                                    <div className="display-3 mb-5 text-center">Biografia</div>
 
-                                    <Image
+                                    {/* <Image
                                         src={image4}
                                         className="imagenFondoGris2"
 
-                                    />
+                                    /> */}
                                 </Col>
                                 <Col lg={12} className="mt-5">
-                                    <Row>
+                                    <Biography />
+
+
+
+
+
+                                    {/* <Row>
                                         <Col lg={10}>
                                             <h5>
                                                 Actualmente sigo formandome aprendiendo tecnologias
@@ -117,7 +126,7 @@ const About = () => {
 
                                             </Row>
                                         </Col>
-                                    </Row>
+                                    </Row> */}
                                 </Col>
                             </Row>
                         </Col>
