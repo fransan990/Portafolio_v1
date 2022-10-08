@@ -80,53 +80,13 @@ const About = () => {
                             </Row>
                         </Col>
 
-                        <Col lg={6} className="columnasFondoGris" >
+                        <Col lg={6} className="columnasFondoGris " >
                             <Row>
                                 <Col lg={12} className="colocacion">
                                     <div className="display-3 mb-5 text-center">Biografia</div>
-
-                                    {/* <Image
-                                        src={image4}
-                                        className="imagenFondoGris2"
-
-                                    /> */}
                                 </Col>
                                 <Col lg={12} className="mt-5">
                                     <Biography />
-
-
-
-
-
-                                    {/* <Row>
-                                        <Col lg={10}>
-                                            <h5>
-                                                Actualmente sigo formandome aprendiendo tecnologias
-                                            </h5>
-
-                                            <hr />
-
-                                            <Row>
-                                                <Col lg={6}>
-                                                    <p className="fs-5">
-                                                        <FaAngular />
-                                                        <span className="mx-4">
-                                                            Angular
-                                                        </span>
-                                                    </p>
-                                                </Col>
-                                                <Col lg={6}>
-                                                    <p className="fs-5">
-                                                        <SiAntdesign />
-                                                        <span className="mx-4">
-                                                            Antdesign
-                                                        </span>
-                                                    </p>
-                                                </Col>
-
-                                            </Row>
-                                        </Col>
-                                    </Row> */}
                                 </Col>
                             </Row>
                         </Col>
