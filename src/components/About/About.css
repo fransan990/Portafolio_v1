@@ -43,14 +43,17 @@
 .separacionSuperior {
     margin-top: 110px;
     padding: 130px;
+    /* overflow-y: hidden; */
 }
 
 .fondoGris {
-    position: relative;
-    bottom: 462px;
+    position: absolute;
+    /* bottom: 462px; */
+    top: 1280px;
     background-color: #697288;
-    padding: 250px;
-    /* TOCAR */
+    padding: 299px;
+    /* overflow-y: hidden; */
+    /* poner en todo la parte */
 }
 
 .columnasFondoGris {

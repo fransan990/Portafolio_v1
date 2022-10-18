@@ -5,11 +5,12 @@ import "./Biography.css"
 
 const Biography = () => {
 
-    const [items, setItems] = useState(biografia)
+    const [items, setItems] = useState()
 
-    const filterElement = (categorias) => {
 
-        alert(categorias)
+    const filterElement = (categorias = "educacion") => {
+
+        console.log(categorias)
 
         let updateItems
         for (const property in categorias) {
@@ -19,7 +20,7 @@ const Biography = () => {
             })
         }
 
-        //REVISAR ESTA PARTE PARA HACERLO DE OTRA MANERA
+        //REVISAR ESTA PARTE PARA HACERLO DE OTRA MANERA plantearlo como useeffects
 
         setItems(updateItems)
     }
@@ -33,10 +34,10 @@ const Biography = () => {
                 <div className="d-flex justify-content-around">
 
                     {
-                        buton.map((buto, index) => (
+                        buton.map((buto) => (
 
 
-                            < Button className="btn-warning" onClick={() => filterElement({ buto })}>{buto}</Button>
+                            < Button onClick={() => filterElement({ buto })}>{buto}</Button>
 
 
                         ))
@@ -60,7 +61,7 @@ const Biography = () => {
                 <Row>
 
                     {
-                        items.map((elem) => {
+                        items?.map((elem) => {
                             const { id, nombre, imagen, categoria, tecnologias, descripcion } = elem
                             return (
                                 <Col lg={12}>

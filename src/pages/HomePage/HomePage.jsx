@@ -11,7 +11,8 @@ const HomePage = () => {
             <Navigation />
             <Header />
             <About />
-            <Biography />
+            {/* <Biography /> */}
+            <h2 className="text-center">Tecnologias</h2>
         </>
 
     )

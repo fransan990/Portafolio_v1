@@ -60,7 +60,7 @@ const biografia = [
         nombre: "Desarrollador web",
         categoria: "experiencia",
         tecnologias: "NTT Data | Sevilla | Septiembre 2021/ Diciembre 2021",
-        descripcion: "Agilización de trabajo, trabajo en equipo, cumplimiento de los requisitos del cliente"
+        descripcion: "En esta empresa estuve realizando las practicas del grado superior donde empece a trabajar en diferentes proyectos agilización el trabajo a mis compañeros y resolviendo diferentes desafios utilizando todo lo aprendido cumplimiento asi los requisitos del cliente"
 
 
     },
@@ -69,7 +69,7 @@ const biografia = [
         nombre: "Asistente Técnico",
         categoria: "experiencia",
         tecnologias: "C.E.I.P Manuel Marín | Badajoz | April 2019 / June 2019",
-        descripcion: "Instalación y configuración de diferentes sistemas operaticos asi como las redes de los mismos y tambien  montandoy repararando equipos "
+        descripcion: "En esta empresa que se encontraba en un instituto realice las practicas de grado medio donde estuve mano a mano con un equipo de profesionales realizando proyectos que hablaban sobre temas de la actualidad que prensentaba en los distintos colegios de la comarca tambien realice la instalación y configuración de diferentes sistemas operaticos asi como las redes de los mismos y tambien  montando los equipos de los colegios asi como repararandolos de cualquier averia que tuvieran"
 
 
     }

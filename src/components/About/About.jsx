@@ -14,13 +14,19 @@ const About = () => {
 
         let readMore_btn = document.getElementById('readMore_btn');
         let hideText = document.getElementById('hideText');
+        let fondoGris = document.querySelector('.fondoGris')
+
         hideText.classList.toggle('showText');
 
         if (hideText.classList.contains('showText')) {
             readMore_btn.innerHTML = 'Ver menos'
+            fondoGris.setAttribute("style", "top:1552px;");
+
         }
         else {
             readMore_btn.innerHTML = 'Ver mas'
+            fondoGris.setAttribute("style", "top:1280px;");
+
         }
     }
 
@@ -52,7 +58,7 @@ const About = () => {
                                                 De pequeño descubrí que me apasionaba el mundo de la informática en concreto a la programación porque veía que me permitía aplicar mi creatividad creando cualquier producto propio ahora busco avanzar en las habilidades de programación y desarrollo de bases de datos me encantaría poder colaborar en cualquier proyecto que me ayude a añadir o mejorar mis habilidades así como también me ayude a avanzar en mi carrera como desarrollador.
                                             </span>
                                         </p>
-                                        <button className="readMore_btn m-0 mx-auto mt-2 h4" id="readMore_btn" onClick={() => { toggleText() }}>Read More</button>
+                                        <button className="readMore_btn m-0 mx-auto mt-2 h4" id="readMore_btn" onClick={() => { toggleText() }}>Ver Mas</button>
                                     </Col>
                                 </Row>
                             </Container>
@@ -83,7 +89,7 @@ const About = () => {
                         <Col lg={6} className="columnasFondoGris " >
                             <Row>
                                 <Col lg={12} className="colocacion">
-                                    <div className="display-3 mb-5 text-center">Biografia</div>
+                                    <div className="display-3 mb-4 text-center">Biografia</div>
                                 </Col>
                                 <Col lg={12} className="mt-5">
                                     <Biography />
