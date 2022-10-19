@@ -8,39 +8,3 @@
     bottom: 573px;
 
 }
-
-.h {
-
-    animation: identifier 3s infinite;
-}
-
-.o {
-    animation: identifier 3s infinite;
-
-}
-
-.i {
-    animation: identifier 3s infinite;
-}
-
-.margen {
-    margin-top: 80px;
-}
-
-
-
-@keyframes identifier {
-    0% {
-        color: #000;
-    }
-
-    50% {
-        text-shadow: black 0.1em 0.1em 0.2em
-    }
-
-    100% {
-        color: black;
-
-    }
-
-}

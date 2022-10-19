@@ -30,9 +30,9 @@ const Navigation = () => {
             <Navbar className={navColour ? "sticky" : "navbar"} collapseOnSelect expand="lg" fixed='top'>
                 <Container>
                     <Nav>
-                        {pages.map((page) => (
+                        {pages.map((page, idx) => (
 
-                            <Nav.Link ><Link className='navbarSpy' activeClass="active" to={page} spy={true} smooth={true} offset={50} duration={500} >{page}</Link></Nav.Link>
+                            <Nav.Link key={idx} ><Link className='navbarSpy' activeClass="active" to={page} spy={true} smooth={true} offset={50} duration={500} >{page}</Link></Nav.Link>
 
                         ))}
                     </Nav>

@@ -1,26 +1,29 @@
+import { useEffect } from "react"
 import { useState } from "react"
-import { Row, Col, Button } from "react-bootstrap"
+import { Row, Col, Button, ToggleButtonGroup, ToggleButton } from "react-bootstrap"
 import biografia from "../../config/biography-config"
 import "./Biography.css"
-
 const Biography = () => {
 
     const [items, setItems] = useState()
 
+    let updateItems
 
-    const filterElement = (categorias = "educacion") => {
+    useEffect(() => {
 
-        console.log(categorias)
+        updateItems = biografia.filter(ele => {
 
-        let updateItems
-        for (const property in categorias) {
+            return ele.categoria == "educación"
+        })
+        setItems(updateItems)
 
-            updateItems = biografia.filter(ele => {
-                return ele.categoria == categorias[property]
-            })
-        }
+    }, []);
 
-        //REVISAR ESTA PARTE PARA HACERLO DE OTRA MANERA plantearlo como useeffects
+    const filterElement = (categorias) => {
+
+        updateItems = biografia.filter(ele => {
+            return ele.categoria == categorias
+        })
 
         setItems(updateItems)
     }
@@ -31,30 +34,17 @@ const Biography = () => {
         <Row>
             <Col lg={12}>
 
-                <div className="d-flex justify-content-around">
-
+                <ToggleButtonGroup className="d-flex justify-content-around" type="radio" name="options" defaultValue={0}>
                     {
-                        buton.map((buto) => (
+                        buton.map((buto, idx) => (
 
-
-                            < Button onClick={() => filterElement({ buto })}>{buto}</Button>
-
-
+                            <ToggleButton key={idx} id={"tbg-radio-" + idx} value={idx} onClick={() => filterElement(buto)}>{buto}</ToggleButton>
                         ))
+
                     }
-                </div>
+                </ToggleButtonGroup>
+
             </Col>
-
-            {/* <div className="d-flex justify-content-around">
-                <Button className="btn-warning" onClick={() => filterElement("educación")}>Educación</Button>
-                <Button className="btn-warning">HTML</Button>
-                <Button className="btn-warning">Servidor</Button>
-                <Button className="btn-warning">Cliente</Button>
-                <Button className="btn-warning">React</Button>
-                <Button className="btn-warning" onClick={() => setItems(biografia)}>Full</Button> */}
-
-
-
 
 
             <Col lg={12} className="text-start mt-5">
@@ -62,36 +52,22 @@ const Biography = () => {
 
                     {
                         items?.map((elem) => {
-                            const { id, nombre, imagen, categoria, tecnologias, descripcion } = elem
+                            const { id, nombre, tecnologias, descripcion } = elem
                             return (
-                                <Col lg={12}>
-                                    <Row>
-                                        <Col lg={12}>
-                                            <p className="fw-bold">{nombre}</p>
-                                        </Col>
-                                        <Col lg={12}>
-                                            <p>{tecnologias}</p>
-                                        </Col>
-                                        <Col lg={12}>
+                                <Col lg={12} key={id}>
 
+                                    <p className="fw-bold">{nombre}</p>
+                                    <p>{tecnologias}</p>
+                                    <p>{descripcion}</p>
 
-                                            <p>{descripcion}</p>
-
-                                        </Col>
-
-                                    </Row>
                                 </Col>
                             )
-
                         })
                     }
                 </Row>
 
             </Col>
         </Row >
-
-
-
 
     )
 

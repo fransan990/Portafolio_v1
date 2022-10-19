@@ -22,6 +22,7 @@ const About = () => {
             readMore_btn.innerHTML = 'Ver menos'
             fondoGris.setAttribute("style", "top:1552px;");
 
+
         }
         else {
             readMore_btn.innerHTML = 'Ver mas'
