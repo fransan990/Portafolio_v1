@@ -98,3 +98,7 @@
     overflow: hidden;
     transition: all 0.4s ease 0s;
 }
+
+.separacionSuperiorTechnologies {
+    margin-top: 150px;
+}

@@ -5,6 +5,7 @@ import "./About.css"
 import { FaAngular } from "react-icons/fa"
 import { SiAntdesign } from "react-icons/si"
 import Biography from "../Biography/Biography";
+import Technologies from "../Technologies/Technologies";
 
 
 
@@ -37,7 +38,7 @@ const About = () => {
 
     return (
 
-        <Col lg={12} className="position-relative image2Esfera">
+        <Col lg={12} className=" image2Esfera">
             <Row>
 
                 <Col lg={6} className="mx-auto m-0 text-center">
@@ -101,6 +102,10 @@ const About = () => {
                 </Col>
 
                 <Col lg={12} className="fondoGris"></Col>
+                <Col lg={12} className="separacionSuperiorTechnologies">
+                    <Technologies />
+
+                </Col>
             </Row >
         </Col >
     )

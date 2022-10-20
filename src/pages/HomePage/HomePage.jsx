@@ -3,7 +3,7 @@ import Navigation from "../../components/Nav/Navigation"
 import Header from "../../components/Header/Header"
 import About from "../../components/About/About"
 import Biography from "../../components/Biography/Biography"
-
+import Projects from "../../components/Projects/Projects"
 const HomePage = () => {
 
     return (
@@ -11,8 +11,9 @@ const HomePage = () => {
             <Navigation />
             <Header />
             <About />
-            {/* <Biography /> */}
-            <h2 className="text-center">Tecnologias</h2>
+            <Projects />
+
+
         </>
 
     )
