@@ -14,27 +14,27 @@ const Technologies = () => {
                     </Col>
                     <Col lg={12}>
                         <Row className="icons">
-                            <Col xs={2} md={2}>
+                            <Col xs={3} md={3}>
                                 <DiHtml5 />
                                 <p>HTML</p>
                             </Col>
-                            <Col xs={2} md={2}>
+                            <Col xs={2} md={3}>
                                 <DiCss3 />
                                 <p>CSS</p>
                             </Col>
-                            <Col xs={2} md={2}>
+                            <Col xs={2} md={3}>
                                 <DiJsBadge />
                                 <p>JavaScript</p>
                             </Col>
-                            <Col xs={2} md={2}>
+                            <Col xs={2} md={3}>
                                 <DiReact />
                                 <p>React</p>
                             </Col>
-                            <Col xs={2} md={2}>
+                            <Col xs={2} md={3}>
                                 <DiNodejs />
                                 <p>Node</p>
                             </Col>
-                            <Col xs={2} md={2}>
+                            <Col xs={2} md={3}>
                                 <SiExpress />
                                 <p>Express</p>
                             </Col>
