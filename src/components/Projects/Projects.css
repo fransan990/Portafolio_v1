@@ -4,12 +4,13 @@
 
 .item .box {
     text-align: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 280px;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center; */
+    height: 580px;
+    /* alto de la caja azul que esta encima  */
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .item .cover {
@@ -57,4 +58,12 @@
 
 .social a:hover {
     opacity: 1;
+}
+
+.imageProjects {
+
+    width: 100%;
+    /* object-fit: cover; */
+    /* object-position: center center; */
+    height: 580px
 }

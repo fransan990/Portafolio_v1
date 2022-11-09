@@ -1,7 +1,7 @@
 const projects = [
     {
         id: 1,
-        imagen: "../../images/imagenProyecto1.png",
+        imagen: "../../images/proyecto1.png",
         nombre: "Juego",
         categoria: "todo",
         tecnologias: "| HTML5 | CSS3 | JavaScript | Canvas js",
@@ -23,7 +23,7 @@ const projects = [
     },
     {
         id: 3,
-        imagen: "https://github.com/fransan990/gelioX_Client/blob/main/public/images/InicioPagina.png",
+        imagen: "../../images/gelioX.png",
         nombre: "gelioX",
         categoria: "principal",
         tecnologias: "| React | React-bootstrap | Aos | HTML5 | CSS3 | Javascript | Express | Node.js | MongoDB | Mongoose | JWS |",
