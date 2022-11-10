@@ -1,7 +1,12 @@
 import { Container, Row, Col, Button } from "react-bootstrap"
 import projects from "../../config/projects-config"
+// import { Link } from 'react-router-dom'
 import Image from "react-bootstrap/Image";
+import { FaSearch, FaGithub } from "react-icons/fa"
+import { MdOutlinePreview } from "react-icons/md"
 import "./Projects.css"
+import { Link } from "react-router-dom";
+import clickLinkOut from "../../utils/clickLinkOut";
 
 
 const Projects = () => {
@@ -17,16 +22,20 @@ const Projects = () => {
                             <Row>
                                 {
                                     projects.map((elem) => {
-                                        const { id, imagen, nombre, tecnologias, descripcion } = elem
+                                        const { id, imagen, nombre, enlaceGitHub, enlaceLive } = elem
                                         return (
                                             <Col lg={4} key={id}>
-                                                <div class="item">
-                                                    <div class="box">
+                                                <div className="item">
+                                                    <div className="box">
                                                         <Image src={imagen} className="imageProjects" />
-                                                        <div class="cover">
-                                                            <h3 class="name">{nombre}</h3>
-                                                            <p class="title">Android Developer</p>
-                                                            <div class="social"><i class="fa fa-facebook-official"></i><i class="fa fa-twitter"></i><i class="fa fa-instagram"></i></div>
+                                                        <div className="cover">
+                                                            <h3 className="name">{nombre}</h3>
+                                                            <p className="title">Android Developer</p>
+                                                            <div className="social">
+                                                                <Link to={`/detalles/${id}`} className='btn'><FaSearch /></Link>
+                                                                <Button className="btn" onClick={() => clickLinkOut(enlaceGitHub)}><FaGithub /></Button>
+                                                                <Button className="btn" onClick={() => clickLinkOut(enlaceLive)}><MdOutlinePreview /></Button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -34,17 +43,12 @@ const Projects = () => {
                                         )
                                     })
                                 }
-
                             </Row>
-
                         </Col>
                     </Row>
-
                 </Col>
             </Row>
         </Container>
-
-
     )
 
 }

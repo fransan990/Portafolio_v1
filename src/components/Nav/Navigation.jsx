@@ -4,6 +4,8 @@ import { useState } from 'react'
 import { Link } from "react-scroll"
 import { AiFillInstagram } from 'react-icons/ai';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
+import clickLinkOut from "../../utils/clickLinkOut";
+
 
 const Navigation = () => {
 
@@ -15,10 +17,6 @@ const Navigation = () => {
         } else {
             updateNavbar(false);
         }
-    }
-
-    const clickLinkOut = (enlace) => {
-        window.open(enlace, '_blank')
     }
 
     window.addEventListener("scroll", scrollHandler);
