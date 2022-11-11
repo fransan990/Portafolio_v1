@@ -32,7 +32,7 @@ const Projects = () => {
                                                             <h3 className="name">{nombre}</h3>
                                                             <p className="title">Android Developer</p>
                                                             <div className="social">
-                                                                <Link to={`/detalles/${id}`} className='btn'><FaSearch /></Link>
+                                                                <Button className='btn' ><Link to={`/detalles/${id}`}  ><FaSearch /></Link></Button>
                                                                 <Button className="btn" onClick={() => clickLinkOut(enlaceGitHub)}><FaGithub /></Button>
                                                                 <Button className="btn" onClick={() => clickLinkOut(enlaceLive)}><MdOutlinePreview /></Button>
                                                             </div>

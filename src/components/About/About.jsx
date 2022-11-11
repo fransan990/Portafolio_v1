@@ -75,8 +75,6 @@ const About = () => {
                             <Row>
                                 <Col lg={12}>
                                     <AnimatedWriting />
-
-
                                 </Col>
                                 <Col lg={12}>
                                     <Image

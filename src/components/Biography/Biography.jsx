@@ -13,7 +13,7 @@ const Biography = () => {
 
         updateItems = biografia.filter(ele => {
 
-            return ele.categoria == "educación"
+            return ele.categoria == "Educación"
         })
         setItems(updateItems)
 
@@ -28,7 +28,7 @@ const Biography = () => {
         setItems(updateItems)
     }
 
-    const buton = ['educación', 'experiencia', 'service'];
+    const buton = ['Educación', 'Experiencia', 'Servicio'];
 
     return (
         <Row>
