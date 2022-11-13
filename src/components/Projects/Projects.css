@@ -108,3 +108,16 @@
     /* object-position: center center; */
     height: 580px
 }
+
+#botonGitHub {
+    border: 2px solid white;
+    padding: 20px;
+    color: white;
+    margin-top: 180px;
+}
+
+#botonGitHub:hover {
+    transform: scale(1.1);
+    color: black;
+    background-color: white;
+}

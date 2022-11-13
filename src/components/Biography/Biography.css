@@ -9,6 +9,10 @@
 
 }
 
+label {
+    background-color: red;
+}
+
 /* .btn-group:hover {
     background-color: rgba(29, 39, 62, 0.75);
 } Cambiar el color del boton */
