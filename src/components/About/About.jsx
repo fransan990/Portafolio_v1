@@ -38,40 +38,38 @@ const About = () => {
 
     return (
 
-        <Col lg={12} className=" image2Esfera">
+        <Col lg={12} className="image2Esfera" >
             <Row>
-
-                <Col lg={6} className="mx-auto m-0 text-center">
+                <Col lg={6} className="mx-auto m-0 text-center"  >
 
                     <Image
                         src={image2}
                         roundedCircle
                         className="image2Tamaño"
+                        id="Sobre Mi"
                     />
 
                     <Row>
-                        <Col lg={12} className="text-center">
-                            <Container>
-                                <Row>
-                                    <Col lg={12} className="text-center">
-                                        <p className="h4 mx-5 mt-3" id="Sobre Mi">
-                                            Hola soy Fran soy Soy Desarrollador Web Full Stack con background en un grado superior en desarrollo web de aplicaciones y con un bootcamp de desarrollador full stack  de Ironhack
-                                            <span id="hideText" className="hideText h4 mt-3">
-                                                De pequeño descubrí que me apasionaba el mundo de la informática en concreto a la programación porque veía que me permitía aplicar mi creatividad creando cualquier producto propio ahora busco avanzar en las habilidades de programación y desarrollo de bases de datos me encantaría poder colaborar en cualquier proyecto que me ayude a añadir o mejorar mis habilidades así como también me ayude a avanzar en mi carrera como desarrollador.
-                                            </span>
-                                        </p>
-                                        <button className="readMore_btn m-0 mx-auto mt-2 h4" id="readMore_btn" onClick={() => { toggleText() }}>Ver Mas</button>
-                                    </Col>
-                                </Row>
-                            </Container>
+                        <Col lg={12} className="text-center" >
+                            <Row>
+                                <Col lg={12} className="colorGris ">
+                                    <p className="h4 mx-5 mt-3 overflow-hidden" >
+                                        Hola soy Fran soy Soy Desarrollador Web Full Stack con background en un grado superior en desarrollo web de aplicaciones y con un bootcamp de desarrollador full stack  de Ironhack
+                                        <span id="hideText" className="hideText h4 mt-3">
+                                            . De pequeño descubrí que me apasionaba el mundo de la informática en concreto a la programación porque veía que me permitía aplicar mi creatividad creando cualquier producto propio ahora busco avanzar en las habilidades de programación y desarrollo de bases de datos me encantaría poder colaborar en cualquier proyecto que me ayude a añadir o mejorar mis habilidades así como también me ayude a avanzar en mi carrera como desarrollador.
+                                        </span>
+                                    </p>
+                                    <button className="readMore_btn m-0 mx-auto mt-2 h4" id="readMore_btn" onClick={() => { toggleText() }}>Ver Mas</button>
+                                </Col>
+                            </Row>
                         </Col>
                     </Row>
                 </Col>
 
-                <Col lg={12} className="mx-5 separacionSuperior">
+                <Col lg={12} className="mx-5 separacionSuperior" >
                     <Row>
 
-                        <Col lg={6} className="columnasFondoGris">
+                        <Col lg={6} className="columnasFondoGris" id="Biografia">
                             <Row>
                                 <Col lg={12}>
                                     <AnimatedWriting />
@@ -89,7 +87,7 @@ const About = () => {
                         <Col lg={6} className="columnasFondoGris " >
                             <Row>
                                 <Col lg={12} className="colocacion">
-                                    <div className="display-3 mb-4 text-center">Biografia</div>
+                                    <h2 className="mb-4 text-center">Biografia</h2>
                                 </Col>
                                 <Col lg={12} className="mt-5">
                                     <Biography />
@@ -100,7 +98,7 @@ const About = () => {
                 </Col>
 
                 <Col lg={12} className="fondoGris"></Col>
-                <Col lg={12} className="separacionSuperiorTechnologies">
+                <Col lg={12} className="separacionSuperiorTechnologies" id="Tecnologias">
                     <Technologies />
 
                 </Col>

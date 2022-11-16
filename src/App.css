@@ -1,6 +1,26 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  -webkit-text-size-adjust: 100%;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1f1f25;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+/* p span {
+  font-weight: 300;
+  color: #717173;
+} */

@@ -18,32 +18,12 @@
     border-radius: 25px;
 }
 
-.botonDetalles:hover {
-    background-color: aquamarine;
-}
-
-.botonDetalles span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-.botonDetalles span:after {
-    content: '»';
+.botonDetalles::after {
     position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -15px;
-    transition: 0.5s;
-}
-
-.botonDetalles:hover span {
-    padding-right: 15px;
-}
-
-.botonDetalles:hover span:after {
-    opacity: 1;
-    right: 0;
-
+    top: 14.5px;
+    right: 7px;
+    width: 48px;
+    height: 47px;
+    content: '»';
+    /* transition: 0.5s; */
 }

@@ -12,7 +12,7 @@ const AnimatedWriting = () => {
     return (
 
         <Col lg={12} className="mt-5 mb-5">
-            <div className='display-4'>
+            <div className='tamanioletra'>
                 Yo soy
                 <span className='fw-bold'>
                     {text}

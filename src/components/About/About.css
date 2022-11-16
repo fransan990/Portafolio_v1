@@ -22,21 +22,23 @@
 
 .hideText {
     display: none;
+
 }
 
 .showText {
-    display: block;
+    display: inline;
 }
 
 .image2Esfera {
     position: relative;
     bottom: 300px;
+
 }
 
 .image2Tamaño {
     background-size: cover;
-    width: 415px;
-    height: 415px;
+    width: 435px;
+    height: 435px;
     border: 8px double white;
 }
 
@@ -51,9 +53,11 @@
     /* bottom: 462px; */
     top: 1280px;
     background-color: #cdd1dd;
-    padding: 299px;
+    padding: 325px;
     /* overflow-y: hidden; */
     /* poner en todo la parte */
+    box-shadow: 2px 2px 5px #999;
+    left: 0;
 }
 
 .columnasFondoGris {
@@ -101,4 +105,8 @@
 
 .separacionSuperiorTechnologies {
     margin-top: 150px;
+}
+
+.colorGris {
+    color: #717173;
 }

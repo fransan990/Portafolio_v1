@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Col, Container, Row, Button } from 'react-bootstrap'
+import { Col, Container, Row, Button, Alert } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
 import projects from '../../config/projects-config'
 import clickLinkOut from "../../utils/clickLinkOut";
@@ -24,7 +24,10 @@ const DetailsPage = () => {
     }
 
 
-
+    const css = (color = "#3d405b") => {
+        document.querySelector(".botonDetalles").style.backgroundColor = color
+        // document.querySelector(".botonDetalles").innerHTML.before = ">"
+    }
 
     return (
 
@@ -32,12 +35,6 @@ const DetailsPage = () => {
             <Row>
                 {filterProject.map((projectDetail, idx) => {
                     const { id, imagen, titulo, tecnologias, descripcion, institucion, tiempo, enlaceLive, color } = projectDetail
-
-                    // let colorBoton = document.querySelector(".botonDetalles").hover(function () {
-                    //     this.css("background-color", { color });
-                    // })
-                    // addEventListener()
-
 
                     return (
 
@@ -63,8 +60,11 @@ const DetailsPage = () => {
                                         </Col>
                                         <Col lg={4}>
 
-                                            <Button className="botonDetalles" onClick={() => clickLinkOut(enlaceLive)}> <span>Ver proyecto</span></Button>
-
+                                            <Button className="botonDetalles"
+                                                onMouseEnter={() => css(color)}
+                                                onMouseOut={() => css()}
+                                                onClick={() => clickLinkOut(enlaceLive)}>
+                                                Ver proyecto</Button>
                                         </Col>
                                     </Row>
                                 </Col>

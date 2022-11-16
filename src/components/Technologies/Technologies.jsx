@@ -6,7 +6,7 @@ import "./Technologies.css"
 const Technologies = () => {
     return (
         <Row>
-            <Col lg={12} className="TechnologiesPosition">
+            <Col lg={12} className="TechnologiesPosition" >
                 <Row>
                     <Col lg={12} className="mb-5">
                         <div className="text-center display-4">Tecnologias</div>

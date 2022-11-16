@@ -6,6 +6,7 @@ import "./Biography.css"
 const Biography = () => {
 
     const [items, setItems] = useState()
+    const [colores, setColores] = useState()
 
     let updateItems
 
@@ -28,13 +29,18 @@ const Biography = () => {
         setItems(updateItems)
     }
 
+    const click = (id) => {
+        document.querySelector("#" + id).style.backgroundColor = "red"
+        alert("hola")
+    }
+
     const buton = ['Educación', 'Experiencia', 'Servicio'];
 
     return (
         <Row>
             <Col lg={12}>
-
-                <ToggleButtonGroup className="d-flex justify-content-around" type="radio" name="options" defaultValue={0}>
+                {/* reparar y hacer funcion con toggle */}
+                {/* <ToggleButtonGroup className="d-flex justify-content-around" type="radio" name="options" defaultValue={0}>
                     {
                         buton.map((buto, idx) => (
 
@@ -42,7 +48,18 @@ const Biography = () => {
                         ))
 
                     }
+                </ToggleButtonGroup> */}
+
+                <ToggleButtonGroup className="d-flex justify-content-around" type="radio" name="options" defaultValue={0}>
+                    {
+                        buton.map((buto, idx) => (
+
+                            <Button key={idx} id={"tbg-radio-" + idx} value={idx} onClick={() => { filterElement(buto); click("tbg-radio-" + idx); }}>{buto}</Button>
+                        ))
+
+                    }
                 </ToggleButtonGroup>
+
 
             </Col>
 
