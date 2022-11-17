@@ -6,19 +6,27 @@ import "./Biography.css"
 const Biography = () => {
 
     const [items, setItems] = useState()
-    const [colores, setColores] = useState()
+
+    const [coloresArr, setColoresArr] = useState(["tbg-radio-0"])
 
     let updateItems
 
     useEffect(() => {
 
-        updateItems = biografia.filter(ele => {
-
-            return ele.categoria == "Educación"
-        })
-        setItems(updateItems)
+        filterOneElement()
 
     }, []);
+
+    const filterOneElement = () => {
+
+        updateItems = biografia.filter(ele => {
+            document.querySelector("#tbg-radio-0").style.backgroundColor = "red";
+
+            return ele.categoria == "Educación"
+
+        })
+        setItems(updateItems)
+    }
 
     const filterElement = (categorias) => {
 
@@ -29,17 +37,66 @@ const Biography = () => {
         setItems(updateItems)
     }
 
-    const click = (id) => {
-        document.querySelector("#" + id).style.backgroundColor = "red"
-        alert("hola")
+    const clickColor = (id) => {
+
+        setColoresArr([...coloresArr, id])
+
+        const ultimo = coloresArr[coloresArr.length - 1]
+        console.log("-------------------")
+        console.log("ultimo valor del array", ultimo)
+
+
+        if (ultimo != id) {
+            document.querySelector("#" + ultimo).style.backgroundColor = "transparent"
+            document.querySelector("#" + id).style.backgroundColor = "red"
+            console.log("array original", coloresArr)
+            // coloresArr.pop()
+            // setColoresArr([...coloresArr, id])
+            console.log("despues del cambio", coloresArr)
+
+        }
+        coloresArr.pop()
+        setColoresArr([...coloresArr, id])
     }
+    // const clickColor = (id) => {
+
+    //     if (valorArr != id) {
+    //         document.querySelector("#" + valorArr).classList.remove("primero")
+    //         document.querySelector("#" + id).classList.toggle("primero")
+    //         setvalorArr(id) // va por detras el useState "enqueues"
+
+    //     }
+    // }
+
+    // const clickColor = (id) => {
+
+    //     setvalorArr([...valorArr, id])
+
+    //     const ultimo = valorArr[valorArr.length - 1]
+    //     console.log("valor inical", valorArr)
+
+    //     if (valorArr != id) {
+    //         document.querySelector("#" + valorArr).classList.remove("primero")
+    //         document.querySelector("#" + id).classList.toggle("primero")
+    //         // setvalorArr(id) // va por detras el useState "enqueues"
+
+
+    //     }
+    //     // console.log("valor nuevo", valorArr)
+
+    //     valorArr.pop()
+    //     setvalorArr([...valorArr, id])
+    //     console.log("valor nuevo", valorArr)
+
+    // }
 
     const buton = ['Educación', 'Experiencia', 'Servicio'];
 
     return (
         <Row>
             <Col lg={12}>
-                {/* reparar y hacer funcion con toggle */}
+
+                {/* antiguo */}
                 {/* <ToggleButtonGroup className="d-flex justify-content-around" type="radio" name="options" defaultValue={0}>
                     {
                         buton.map((buto, idx) => (
@@ -50,15 +107,15 @@ const Biography = () => {
                     }
                 </ToggleButtonGroup> */}
 
-                <ToggleButtonGroup className="d-flex justify-content-around" type="radio" name="options" defaultValue={0}>
+                <div className="d-flex justify-content-around">
                     {
                         buton.map((buto, idx) => (
 
-                            <Button key={idx} id={"tbg-radio-" + idx} value={idx} onClick={() => { filterElement(buto); click("tbg-radio-" + idx); }}>{buto}</Button>
+                            <Button className="col-4" key={idx} id={"tbg-radio-" + idx} value={idx} onClick={() => { filterElement(buto); clickColor("tbg-radio-" + idx); }}>{buto}</Button>
                         ))
 
                     }
-                </ToggleButtonGroup>
+                </div>
 
 
             </Col>
