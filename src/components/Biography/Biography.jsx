@@ -7,7 +7,7 @@ const Biography = () => {
 
     const [items, setItems] = useState()
 
-    const [coloresArr, setColoresArr] = useState(["tbg-radio-0"])
+    const [valorArr, setvalorArr] = useState("tbg-radio-0")
 
     let updateItems
 
@@ -20,7 +20,7 @@ const Biography = () => {
     const filterOneElement = () => {
 
         updateItems = biografia.filter(ele => {
-            document.querySelector("#tbg-radio-0").style.backgroundColor = "red";
+            document.querySelector("#tbg-radio-0").classList.add("primero");
 
             return ele.categoria == "Educación"
 
@@ -37,36 +37,36 @@ const Biography = () => {
         setItems(updateItems)
     }
 
-    const clickColor = (id) => {
-
-        setColoresArr([...coloresArr, id])
-
-        const ultimo = coloresArr[coloresArr.length - 1]
-        console.log("-------------------")
-        console.log("ultimo valor del array", ultimo)
-
-
-        if (ultimo != id) {
-            document.querySelector("#" + ultimo).style.backgroundColor = "transparent"
-            document.querySelector("#" + id).style.backgroundColor = "red"
-            console.log("array original", coloresArr)
-            // coloresArr.pop()
-            // setColoresArr([...coloresArr, id])
-            console.log("despues del cambio", coloresArr)
-
-        }
-        coloresArr.pop()
-        setColoresArr([...coloresArr, id])
-    }
     // const clickColor = (id) => {
 
-    //     if (valorArr != id) {
-    //         document.querySelector("#" + valorArr).classList.remove("primero")
-    //         document.querySelector("#" + id).classList.toggle("primero")
-    //         setvalorArr(id) // va por detras el useState "enqueues"
+    //     setColoresArr([...coloresArr, id])
+
+    //     const ultimo = coloresArr[coloresArr.length - 1]
+    //     console.log("-------------------")
+    //     console.log("ultimo valor del array", ultimo)
+
+
+    //     if (ultimo != id) {
+    //         document.querySelector("#" + ultimo).style.backgroundColor = "transparent"
+    //         document.querySelector("#" + id).style.backgroundColor = "red"
+    //         console.log("array original", coloresArr)
+    //         // coloresArr.pop()
+    //         // setColoresArr([...coloresArr, id])
+    //         console.log("despues del cambio", coloresArr)
 
     //     }
+    //     coloresArr.pop()
+    //     setColoresArr([...coloresArr, id])
     // }
+    const clickColor = (id) => {
+
+        if (valorArr != id) {
+            document.querySelector("#" + valorArr).classList.remove("primero")
+            document.querySelector("#" + id).classList.toggle("primero")
+            setvalorArr(id) // va por detras el useState "enqueues"
+
+        }
+    }
 
     // const clickColor = (id) => {
 
