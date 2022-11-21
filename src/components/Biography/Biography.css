@@ -11,6 +11,10 @@
 
 .primero {
     background-color: #283959;
+    /* cursor: pointer; */
+    border: none;
+    /* poner el pointer cuando este encima */
+
 
 }
 

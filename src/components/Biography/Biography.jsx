@@ -109,9 +109,11 @@ const Biography = () => {
 
                 <div className="d-flex justify-content-around">
                     {
-                        buton.map((buto, idx) => (
 
-                            <Button className="col-4" key={idx} id={"tbg-radio-" + idx} value={idx} onClick={() => { filterElement(buto); clickColor("tbg-radio-" + idx); }}>{buto}</Button>
+                        buton.map((buto, idx) => (
+                            /* <Button className="col-4" key={idx} id={"tbg-radio-" + idx} value={idx} onClick={() => { filterElement(buto); clickColor("tbg-radio-" + idx); }}>{buto}</Button> */
+
+                            <buton className="col-4 text-center p-2 text-white cursor-pointer" key={idx} id={"tbg-radio-" + idx} value={idx} onClick={() => { filterElement(buto); clickColor("tbg-radio-" + idx); }}>{buto}</buton>
                         ))
 
                     }

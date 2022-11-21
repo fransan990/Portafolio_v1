@@ -10,7 +10,7 @@ import clickLinkOut from "../../utils/clickLinkOut";
 
 const Projects = () => {
     return (
-        <Container id="Projectos">
+        <Container id="Projectos" className="mb-5">
             <Row>
                 <Col lg={12}>
                     <h3 className="text-center mb-5">

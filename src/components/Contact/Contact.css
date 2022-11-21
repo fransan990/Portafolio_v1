@@ -1,0 +1,90 @@
+.separacionSuperiorContact {
+    margin-top: 150px;
+}
+
+.caja input {
+    padding: 0 20px;
+    border: 2px solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    transition: all .3s ease;
+    height: 50px;
+    line-height: 46px;
+    margin-bottom: 20px;
+    /* outline: none; */
+    color: #1f1f25;
+    font-size: 15px;
+    letter-spacing: .1px;
+    /* outline: none; */
+
+}
+
+/* .caja textarea {
+    height: 150px;
+    /* outline: none; 
+}
+
+
+ .caja input:focus,
+textarea:focus {
+    border: 2px solid red;
+    outline: 0 none;
+} */
+
+.botonContact {
+
+    width: 50%;
+    /* margin: 0 auto; */
+    margin-top: 20px;
+
+    background-color: rgba(29, 39, 62, 0.75);
+
+
+
+
+    color: #c6c9d8;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid #b1b4c1;
+    padding: 15px 40px;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .5s ease;
+}
+
+.botonContact:hover {
+    padding: 15px;
+    transition: all .5s ease;
+    border-color: rgba(29, 39, 62, 0.75);
+    color: rgba(29, 39, 62, 0.75);
+    background-color: transparent;
+    box-shadow: 5px 5px;
+
+}
+
+/* textarea:focus,
+input:focus,
+input[type]:focus {
+
+    border-color: rgb(255, 144, 0);
+
+
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255, 144, 0, 0.6);
+
+    outline: 0 none;
+
+} */
+/* solucionar lo del texarea */
+
+textarea:focus,
+input:focus,
+input[type]:focus {
+
+    border-color: rgba(29, 39, 62, 0.75);
+
+    box-shadow: 0 1px 1px rgba(29, 39, 62, 0.75)inset, 0 0 8px rgba(29, 39, 62, 0.75);
+
+    outline: 0 none;
+
+}
