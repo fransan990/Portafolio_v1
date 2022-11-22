@@ -1,151 +1,179 @@
 import { useEffect } from "react"
 import { useState } from "react"
 import { Row, Col, Button, ToggleButtonGroup, ToggleButton } from "react-bootstrap"
-import biografia from "../../config/biography-config"
+// import biografia from "../../config/biography-config"
+import { biografia, categories } from "../../config/biography-config";
 import "./Biography.css"
 const Biography = () => {
 
-    const [items, setItems] = useState()
+    //     // const [items, setItems] = useState()
 
-    const [valorArr, setvalorArr] = useState("tbg-radio-0")
+    //     // const [valorArr, setvalorArr] = useState("tbg-radio-0")
 
-    let updateItems
+    //     // const buton = ['Educación', 'Experiencia', 'Servicio'];
+
+    //     // let updateItems
+
+    //     // useEffect(() => {
+    //     //     setItems(filterItems("Educación"));
+    //     // }, []);
+
+    //     // const clickButton = (e) => {
+    //     //     const el = e.target;
+    //     //     document.querySelector(".selected").classList.remove("selected");
+    //     //     el.classList.add("selected");
+    //     //     setItems(filterItems(el.value));
+    //     // };
+
+    //     // const filterItems = (category) => {
+    //     //     return biografia.filter(({ categoria }) => categoria === category);
+    //     // };
+    //     // const filterElement = (categorias) => {
+
+    //     //     updateItems = biografia.filter(ele => {
+    //     //         return ele.categoria == categorias
+    //     //     })
+
+    //     //     setItems(updateItems)
+    //     // }
+
+    //     // const clickColor = (id) => {
+
+    //     //     if (valorArr != id) {
+    //     //         document.querySelector("#" + valorArr).classList.remove("primero")
+    //     //         document.querySelector("#" + id).classList.toggle("primero")
+    //     //         setvalorArr(id) // va por detras el useState "enqueues"
+
+    //     //     }
+    //     // }
+
+    //     const [items, setItems] = useState()
+
+    //     const buttons = ["Educación", "Experiencia", "Servicio"];
+
+    //     useEffect(() => {
+    //         setItems(filterItems("Educación"));
+    //     }, []);
+
+    //     const filterItems = (category) => {
+    //         return biografia.filter(({ categoria }) => categoria === category);
+    //     };
+
+    //     const clickButton = (e) => {
+    //         const el = e.target;
+    //         document.querySelector(".selected").classList.remove("selected");
+    //         el.classList.add("selected");
+    //         setItems(filterItems(el.value));
+    //     };
+
+
+
+
+    //     return (
+    //         <Row>
+    //             <Col lg={12}>
+
+    //                 {/* antiguo */}
+    //                 {/* <ToggleButtonGroup className="d-flex justify-content-around" type="radio" name="options" defaultValue={0}>
+    //                     {
+    //                         buton.map((buto, idx) => (
+
+    //                             <ToggleButton key={idx} id={"tbg-radio-" + idx} value={idx} onClick={() => filterElement(buto)}>{buto}</ToggleButton>
+    //                         ))
+
+    //                     }
+    //                 </ToggleButtonGroup> */}
+
+    //                 <div className="d-flex justify-content-around">
+
+    //                     {buttons.map((button, idx) => (
+    //                         <button
+    //                             className={`col-4 button text-center p-2 text-white cursor-pointer ${idx ? "" : "selected"}`}
+    //                             value={button}
+    //                             onClick={clickButton}
+    //                         >
+    //                             {button}
+    //                         </button>
+    //                     ))}
+    //                 </div>
+
+
+    //             </Col>
+
+
+    //             <Col lg={12} className="text-start mt-5">
+    //                 <Row>
+
+    //                     {items?.map(({ id, nombre, tecnologias, descripcion }) => {
+    //                         return (
+    //                             <Col lg={12} key={id}>
+    //                                 <p className="fw-bold">{nombre}</p>
+    //                                 <p>{tecnologias}</p>
+    //                                 <p>{descripcion}</p>
+    //                             </Col>
+    //                         );
+    //                     })}
+    //                 </Row>
+
+    //             </Col>
+    //         </Row >
+
+    //     )
+
+    // }
+
+    const [items, setItems] = useState();
+
+    const buttons = [...new Set(biografia.map(({ categoria }) => categoria))]
+        .sort()
+        .map((cat) => ({ name: categories[cat], id: cat }));
 
     useEffect(() => {
-
-        filterOneElement()
-
+        setItems(filterItems(buttons[0].id));
     }, []);
 
-    const filterOneElement = () => {
+    const filterItems = (category) => {
+        debugger;
+        return biografia.filter(({ categoria }) => categoria === Number(category));
+    };
 
-        updateItems = biografia.filter(ele => {
-            document.querySelector("#tbg-radio-0").classList.add("primero");
-
-            return ele.categoria == "Educación"
-
-        })
-        setItems(updateItems)
-    }
-
-    const filterElement = (categorias) => {
-
-        updateItems = biografia.filter(ele => {
-            return ele.categoria == categorias
-        })
-
-        setItems(updateItems)
-    }
-
-    // const clickColor = (id) => {
-
-    //     setColoresArr([...coloresArr, id])
-
-    //     const ultimo = coloresArr[coloresArr.length - 1]
-    //     console.log("-------------------")
-    //     console.log("ultimo valor del array", ultimo)
-
-
-    //     if (ultimo != id) {
-    //         document.querySelector("#" + ultimo).style.backgroundColor = "transparent"
-    //         document.querySelector("#" + id).style.backgroundColor = "red"
-    //         console.log("array original", coloresArr)
-    //         // coloresArr.pop()
-    //         // setColoresArr([...coloresArr, id])
-    //         console.log("despues del cambio", coloresArr)
-
-    //     }
-    //     coloresArr.pop()
-    //     setColoresArr([...coloresArr, id])
-    // }
-    const clickColor = (id) => {
-
-        if (valorArr != id) {
-            document.querySelector("#" + valorArr).classList.remove("primero")
-            document.querySelector("#" + id).classList.toggle("primero")
-            setvalorArr(id) // va por detras el useState "enqueues"
-
-        }
-    }
-
-    // const clickColor = (id) => {
-
-    //     setvalorArr([...valorArr, id])
-
-    //     const ultimo = valorArr[valorArr.length - 1]
-    //     console.log("valor inical", valorArr)
-
-    //     if (valorArr != id) {
-    //         document.querySelector("#" + valorArr).classList.remove("primero")
-    //         document.querySelector("#" + id).classList.toggle("primero")
-    //         // setvalorArr(id) // va por detras el useState "enqueues"
-
-
-    //     }
-    //     // console.log("valor nuevo", valorArr)
-
-    //     valorArr.pop()
-    //     setvalorArr([...valorArr, id])
-    //     console.log("valor nuevo", valorArr)
-
-    // }
-
-    const buton = ['Educación', 'Experiencia', 'Servicio'];
+    const clickButton = (e) => {
+        const el = e.target;
+        document.querySelector(".selected").classList.remove("selected");
+        el.classList.add("selected");
+        setItems(filterItems(el.value));
+    };
 
     return (
         <Row>
             <Col lg={12}>
-
-                {/* antiguo */}
-                {/* <ToggleButtonGroup className="d-flex justify-content-around" type="radio" name="options" defaultValue={0}>
-                    {
-                        buton.map((buto, idx) => (
-
-                            <ToggleButton key={idx} id={"tbg-radio-" + idx} value={idx} onClick={() => filterElement(buto)}>{buto}</ToggleButton>
-                        ))
-
-                    }
-                </ToggleButtonGroup> */}
-
                 <div className="d-flex justify-content-around">
-                    {
-
-                        buton.map((buto, idx) => (
-                            /* <Button className="col-4" key={idx} id={"tbg-radio-" + idx} value={idx} onClick={() => { filterElement(buto); clickColor("tbg-radio-" + idx); }}>{buto}</Button> */
-
-                            <buton className="col-4 text-center p-2 text-white cursor-pointer" key={idx} id={"tbg-radio-" + idx} value={idx} onClick={() => { filterElement(buto); clickColor("tbg-radio-" + idx); }}>{buto}</buton>
-                        ))
-
-                    }
+                    {buttons.map(({ name, id }, idx) => (
+                        <button
+                            className={`col-4 button ${idx ? "" : "selected"}`}
+                            value={id}
+                            onClick={clickButton}
+                        >
+                            {name}
+                        </button>
+                    ))}
                 </div>
-
-
             </Col>
-
 
             <Col lg={12} className="text-start mt-5">
                 <Row>
-
-                    {
-                        items?.map((elem) => {
-                            const { id, nombre, tecnologias, descripcion } = elem
-                            return (
-                                <Col lg={12} key={id}>
-
-                                    <p className="fw-bold">{nombre}</p>
-                                    <p>{tecnologias}</p>
-                                    <p>{descripcion}</p>
-
-                                </Col>
-                            )
-                        })
-                    }
+                    {items?.map(({ id, nombre, tecnologias, descripcion }) => {
+                        return (
+                            <Col lg={12} key={id}>
+                                <p className="fw-bold">{nombre}</p>
+                                <p>{tecnologias}</p>
+                                <p>{descripcion}</p>
+                            </Col>
+                        );
+                    })}
                 </Row>
-
             </Col>
-        </Row >
-
-    )
-
-}
+        </Row>
+    );
+};
 export default Biography

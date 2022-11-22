@@ -1,5 +1,6 @@
 .separacionSuperiorContact {
     margin-top: 150px;
+    position: relative;
 }
 
 .caja input {
@@ -9,7 +10,7 @@
     transition: all .3s ease;
     height: 50px;
     line-height: 46px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     /* outline: none; */
     color: #1f1f25;
     font-size: 15px;
@@ -18,17 +19,17 @@
 
 }
 
-/* .caja textarea {
+.caja textarea {
     height: 150px;
-    /* outline: none; 
+    /* outline: none;  */
 }
 
 
- .caja input:focus,
+/* .caja input:focus,
 textarea:focus {
     border: 2px solid red;
     outline: 0 none;
-} */
+}  */
 
 .botonContact {
 
@@ -77,7 +78,7 @@ input[type]:focus {
 } */
 /* solucionar lo del texarea */
 
-textarea:focus,
+textarea[type]:focus,
 input:focus,
 input[type]:focus {
 
@@ -87,4 +88,17 @@ input[type]:focus {
 
     outline: 0 none;
 
+}
+
+.imagenIronhack {
+    width: 100%;
+    /* object-fit: contain;
+    object-fit: cover; */
+    height: 700px;
+    border-radius: 5px;
+    /* box-shadow: 0 25px 65px rgb(0 0 0 / 10%); */
+    /* padding: 20px; */
+    padding-left: 25px;
+    padding-right: 25px;
+    /* margin-left: 20px; */
 }

@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Image } from "react-bootstrap"
 // import { FaLocationArrow } from "react-icons/fa"
 
 import emailjs from 'emailjs-com';
@@ -18,6 +18,9 @@ const Contact = () => {
             });
     }
 
+    const imageIronhack = "../../../images/IronhackNoche.jpeg"
+
+
     return (
 
 
@@ -26,20 +29,20 @@ const Contact = () => {
         <Container className="mt-5 mb-5" id="Contacta">
             <Row>
                 <Col lg={12} className="separacionSuperiorContact">
-                    <Row>
+                    <Row className="justify-content-center">
                         <Col lg={6}>
                             <Row>
-                                <Col lg={12} className="position-relative">
+                                <Col lg={12}>
                                     <h3>
                                         Contacta Conmigo
                                     </h3>
-                                    <div className="mt-3">
+                                    <div className="mt-4">
                                         Estoy disponible para trabajar en cualquier momento . Conéctate conmigo por teléfono: 648949799 o por correo electrónico: fransan990@gmail.com
                                     </div>
                                 </Col>
                                 <Col lg={12}>
                                     <form onSubmit={enviarEmail} className="caja">
-                                        <div className="form-row mt-3">
+                                        <div className="form-row mt-4">
                                             <div className="form-group col-md-6 col-lg-12">
                                                 <label for="npmbre"></label>
                                                 <input type="text" className="form-control col-12" id="nombre" name="nombre" placeholder="Nombre *" />
@@ -47,6 +50,10 @@ const Contact = () => {
                                             <div className="form-group col-md-6 col-lg-12">
                                                 <label for="email"></label>
                                                 <input type="text" className="form-control" id="email" name="email" placeholder="Email *" />
+                                            </div>
+                                            <div className="form-group col-md-6 col-lg-12">
+                                                <label for="asunto"></label>
+                                                <input type="text" className="form-control" id="asunto" name="asunto" placeholder="Asunto *" />
                                             </div>
                                         </div>
                                         <div className="form-group">
@@ -62,7 +69,13 @@ const Contact = () => {
                         </Col>
 
                         <Col lg={6}>
-                            Otro espacio foto
+                            <Image
+                                src={imageIronhack}
+                                // roundedCircle
+                                className="imagenIronhack"
+                            // id="Sobre Mi"
+                            />
+
                         </Col>
 
                     </Row>
