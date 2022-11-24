@@ -22,7 +22,7 @@ const Contact = () => {
 
 
         e.preventDefault();
-        e.target.reset();
+
 
         emailjs.sendForm('service_opa6obq', 'template_uci8fqu', e.target, '-LcIVbhNWVgvNjhBZ')
 
@@ -31,6 +31,9 @@ const Contact = () => {
             }, (error) => {
                 console.log(error.text);
             });
+
+        document.querySelector("#pri").reset()
+
     }
 
     const imageIronhack = "../../../images/IronhackNoche.jpeg"
@@ -58,7 +61,7 @@ const Contact = () => {
                                     </div>
                                 </Col>
                                 <Col lg={12}>
-                                    {/* <form onSubmit={enviarEmail} className="caja">
+                                    <form onSubmit={enviarEmail} className="caja" id="pri">
                                         <div className="form-row mt-4">
                                             <div className="form-group col-md-6 col-lg-12">
                                                 <label for="nombre"></label>
@@ -78,39 +81,7 @@ const Contact = () => {
                                             <textarea type="text" className="form-control" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje *" onChange={handleInputChange}></textarea>
                                         </div>
                                         <button type="submit" className="botonContact">Enviar Correo</button>
-                                    </form> */}
-
-
-                                    <Form onSubmit={enviarEmail}>
-
-                                        <Form.Group className="mt-4 col-md-6 col-lg-12" controlId="Nombre">
-                                            <Form.Label for="Nombre"></Form.Label>
-                                            <Form.Control type="text" name="Nombre" value={Nombre} placeholder="Nombre *" onChange={handleInputChange} />
-                                        </Form.Group>
-
-                                        <Form.Group className="mt-4 col-md-6 col-lg-12" controlId="Email" >
-                                            <Form.Label for="Email"></Form.Label>
-                                            <Form.Control type="text" name="Email" value={Email} placeholder="Email *" onChange={handleInputChange} />
-                                        </Form.Group>
-
-                                        <Form.Group className="mt-4 col-md-6 col-lg-12" controlId="Asunto">
-                                            <Form.Label for="Asunto"></Form.Label>
-                                            <Form.Control type="text" name="Asunto" value={Asunto} placeholder="Asunto" onChange={handleInputChange} />
-                                        </Form.Group>
-
-                                        <FloatingLabel controlId="Mensajes">
-                                            <Form.Control
-                                                as="textarea"
-                                                placeholder="Escribe tu mensaje *"
-                                                className="mt-4 w-100"
-                                                value={Mensaje}
-                                                onChange={handleInputChange}
-                                            />
-                                        </FloatingLabel>
-
-                                        <Button type="submit" className="botonContact">Enviar Correo</Button>
-
-                                    </Form>
+                                    </form>
                                 </Col>
 
                             </Row>
@@ -118,15 +89,16 @@ const Contact = () => {
                         </Col>
 
                         <Col lg={6}>
-                            <Image
-                                src={imageIronhack}
-                                // roundedCircle
-                                className="imagenIronhack"
-                            // id="Sobre Mi"
-                            />
+                            <Row>
+                                <Col lg={12} className="p-1">
 
+                                    <Image
+                                        src={imageIronhack}
+                                        className="imagenIronhack"
+                                    />
+                                </Col>
+                            </Row>
                         </Col>
-
                     </Row>
                 </Col>
             </Row >

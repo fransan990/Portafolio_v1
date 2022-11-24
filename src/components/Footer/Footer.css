@@ -1,0 +1,29 @@
+.footer {
+    /* position: absolute;
+    left: 0;
+    bottom: 0; */
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+    background-color: #00305c52;
+    position: relative;
+}
+
+
+.twiter {
+    background-color: #55acee
+}
+
+.instagram {
+    background-color: #ac2bac
+}
+
+.linkedin {
+    background-color: #0082ca;
+}
+
+.github {
+    background-color: #333333;
+}

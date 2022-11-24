@@ -61,6 +61,7 @@ textarea:focus {
     color: rgba(29, 39, 62, 0.75);
     background-color: transparent;
     box-shadow: 5px 5px;
+    border-radius: 2%;
 
 }
 
@@ -101,4 +102,6 @@ input[type]:focus {
     padding-left: 25px;
     padding-right: 25px;
     /* margin-left: 20px; */
+
+    /* box-shadow: 2px 2px 5px #999; */
 }
