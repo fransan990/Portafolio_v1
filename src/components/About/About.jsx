@@ -21,7 +21,7 @@ const About = () => {
 
         if (hideText.classList.contains('showText')) {
             readMore_btn.innerHTML = 'Ver menos'
-            fondoGris.setAttribute("style", "top:1552px;");
+            fondoGris.setAttribute("style", "top:1490px;");
 
 
         }
@@ -68,7 +68,6 @@ const About = () => {
 
                 <Col lg={12} className="mx-5 separacionSuperior" >
                     <Row>
-
                         <Col lg={6} className="columnasFondoGris" id="Biografia">
                             <Row>
                                 <Col lg={12}>
@@ -78,7 +77,6 @@ const About = () => {
                                     <Image
                                         src={image3}
                                         className="imagenFondoGris1 mt-5"
-
                                     />
                                 </Col>
                             </Row>
@@ -87,7 +85,7 @@ const About = () => {
                         <Col lg={6} className="columnasFondoGris " >
                             <Row>
                                 <Col lg={12} className="colocacion">
-                                    <h2 className="mb-4 text-center">Biografia</h2>
+                                    <h1 className="mb-4 text-center fw-bold">Biografia</h1>
                                 </Col>
                                 <Col lg={12} className="mt-5">
                                     <Biography />
@@ -100,7 +98,6 @@ const About = () => {
                 <Col lg={12} className="fondoGris"></Col>
                 <Col lg={12} className="separacionSuperiorTechnologies" id="Tecnologias">
                     <Technologies />
-
                 </Col>
             </Row >
         </Col >

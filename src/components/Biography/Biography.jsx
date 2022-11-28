@@ -34,7 +34,7 @@ const Biography = () => {
                 <div className="d-flex justify-content-around">
                     {buttons.map(({ name, id }, idx) => (
                         <button
-                            className={`col-4 button ${idx ? "" : "selected"}`}
+                            className={`col-3 button mx-2 ${idx ? "" : "selected"}`}
                             value={id}
                             onClick={clickButton}
                         >
@@ -44,14 +44,14 @@ const Biography = () => {
                 </div>
             </Col>
 
-            <Col lg={12} className="text-start mt-5">
+            <Col lg={12} className="text-start mt-5 ">
                 <Row>
                     {items?.map(({ id, nombre, tecnologias, descripcion }) => {
                         return (
                             <Col lg={12} key={id}>
                                 <p className="fw-bold">{nombre}</p>
-                                <p>{tecnologias}</p>
-                                <p>{descripcion}</p>
+                                <p className="colorGris">{tecnologias}</p>
+                                <p className="colorGris">{descripcion}</p>
                             </Col>
                         );
                     })}

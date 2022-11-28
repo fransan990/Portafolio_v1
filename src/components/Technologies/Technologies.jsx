@@ -9,8 +9,8 @@ const Technologies = () => {
             <Col lg={12} className="TechnologiesPosition" >
                 <Row>
                     <Col lg={12} className="mb-5">
-                        <div className="text-center display-4">Tecnologias</div>
-                        <div className="text-center display-7">Estas son algunas de las tecnologias que mas expeiencia tengo </div>
+                        <h2 className="text-center">Tecnologias</h2>
+                        <div className="text-center colorGris">Estas son algunas de las tecnologias que mas expeiencia tengo, sou un MERN stack developer </div>
                     </Col>
                     <Col lg={12}>
                         <Row className="icons">
@@ -27,12 +27,20 @@ const Technologies = () => {
                                 <p>JavaScript</p>
                             </Col>
                             <Col xs={2} md={3}>
+                                <DiJsBadge />
+                                <p>JavaScript</p>
+                            </Col>
+                            <Col xs={2} md={2}>
                                 <DiReact />
                                 <p>React</p>
                             </Col>
                             <Col xs={2} md={3}>
                                 <DiNodejs />
                                 <p>Node</p>
+                            </Col>
+                            <Col xs={2} md={3}>
+                                <SiExpress />
+                                <p>Express</p>
                             </Col>
                             <Col xs={2} md={3}>
                                 <SiExpress />

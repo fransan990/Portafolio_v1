@@ -31,7 +31,9 @@
 
 .image2Esfera {
     position: relative;
-    bottom: 300px;
+    /* bottom: 300px; */
+    bottom: 320px;
+
 
 }
 
