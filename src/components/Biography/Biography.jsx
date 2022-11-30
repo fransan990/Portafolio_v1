@@ -17,7 +17,7 @@ const Biography = () => {
     }, []);
 
     const filterItems = (category) => {
-        debugger;
+        // debugger;
         return biografia.filter(({ categoria }) => categoria === Number(category));
     };
 

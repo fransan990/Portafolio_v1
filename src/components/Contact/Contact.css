@@ -101,6 +101,7 @@ input[type]:focus {
     /* padding: 20px; */
     padding-left: 25px;
     padding-right: 25px;
+    border-radius: 12px;
     /* margin-left: 20px; */
 
     /* box-shadow: 2px 2px 5px #999; */

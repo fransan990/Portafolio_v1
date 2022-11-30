@@ -10,14 +10,15 @@ import clickLinkOut from "../../utils/clickLinkOut";
 
 const Projects = () => {
     return (
-        <Container id="Projectos" className="mb-5">
+        <Container id="Projectos" className="mb-5 position-relative">
             <Row>
-                <Col lg={12}>
-                    <h3 className="text-center mb-5">
+                <Col lg={12} className="text-center">
+                    <h2>
                         Mis ultimos proyectos
-                    </h3>
+                    </h2>
+                    <p>Mis mejores projectos realizados hasta la fecha aunque tengo bastante mas y no solo proyectos tambien ejercicios realizados en React con Mongo y mucho Js</p>
                     <Row>
-                        <Col lg={12}>
+                        <Col lg={12} className="mt-5">
                             <Row>
                                 {
                                     projects.map((elem) => {
@@ -28,7 +29,7 @@ const Projects = () => {
                                                     <div className="box">
                                                         <Image src={imagen} className="imageProjects" />
                                                         <div className="cover">
-                                                            <h3 className="name">{nombre}</h3>
+                                                            <div className="name">{nombre}</div>
                                                             <p className="title">{titulo}</p>
                                                             <div className="social">
                                                                 {

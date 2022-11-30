@@ -44,7 +44,7 @@ const DetailsPage = () => {
                                     <img src={imagen} alt="" className='img-fluid hover-shadow' />
                                 </Col>
                                 <Col lg={12} className="paddingColum w-75 mb-5">
-                                    <h5 className='text-secondary'>{titulo}</h5>
+                                    <div className='text-secondary tamnioLetra'>{titulo}</div>
                                     <p className='mt-4 mb-4 fw-bold fs-3'>{tecnologias}</p>
                                     <p className='w-75 mt-4 text-secondary fs-5'>{descripcion}</p>
                                 </Col>
@@ -60,11 +60,19 @@ const DetailsPage = () => {
                                         </Col>
                                         <Col lg={4}>
 
-                                            <Button className="botonDetalles"
+                                            <button className="botonDetalles"
                                                 onMouseEnter={() => css(color)}
                                                 onMouseOut={() => css()}
                                                 onClick={() => clickLinkOut(enlaceLive)}>
-                                                Ver proyecto</Button>
+                                                Ver proyecto
+                                            </button>
+                                            {/* boton para atras hacer */}
+                                            {/* <button className="botonDetalles"
+                                                onMouseEnter={() => css(color)}
+                                                onMouseOut={() => css()}
+                                                onClick={() => clickLinkOut(enlaceLive)}>
+                                                Ver proyecto
+                                            </button> */}
                                         </Col>
                                     </Row>
                                 </Col>

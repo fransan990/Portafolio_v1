@@ -1,9 +1,11 @@
 import { Col, Row, Container } from "react-bootstrap";
-import { DiJsBadge, DiReact, DiNodejs, DiCss3, DiHtml5 } from "react-icons/di";
+import { DiJsBadge, DiReact, DiNodejs, DiCss3, DiHtml5, DiMongodb } from "react-icons/di";
 import { SiExpress } from "react-icons/si";
+import { BsBootstrapFill } from "react-icons/bs";
 import "./Technologies.css"
 
 const Technologies = () => {
+
     return (
         <Row>
             <Col lg={12} className="TechnologiesPosition" >
@@ -12,39 +14,70 @@ const Technologies = () => {
                         <h2 className="text-center">Tecnologias</h2>
                         <div className="text-center colorGris">Estas son algunas de las tecnologias que mas expeiencia tengo, sou un MERN stack developer </div>
                     </Col>
-                    <Col lg={12}>
-                        <Row className="icons">
-                            <Col xs={3} md={3}>
-                                <DiHtml5 />
-                                <p>HTML</p>
+                    <Col lg={10} className="mx-auto m-0 mb-5 text-center">
+                        <Row>
+
+                            <Col lg={3}>
+                                <div className="icons">
+
+                                    <DiHtml5 />
+                                    <p>HTML</p>
+                                </div>
+
                             </Col>
-                            <Col xs={2} md={3}>
-                                <DiCss3 />
-                                <p>CSS</p>
+                            <Col lg={3} >
+                                <div className="icons">
+                                    <DiCss3 />
+                                    <p>CSS</p>
+                                </div>
                             </Col>
-                            <Col xs={2} md={3}>
-                                <DiJsBadge />
-                                <p>JavaScript</p>
+                            <Col lg={3}>
+                                <div className="icons">
+                                    <DiJsBadge />
+                                    <p>JavaScript</p>
+                                </div>
                             </Col>
-                            <Col xs={2} md={3}>
-                                <DiJsBadge />
-                                <p>JavaScript</p>
+                            <Col lg={3}>
+                                <div className="icons">
+
+                                    <BsBootstrapFill />
+                                    <p>Boostrap</p>
+                                </div>
+
                             </Col>
-                            <Col xs={2} md={2}>
-                                <DiReact />
-                                <p>React</p>
+                            <Col lg={3}>
+                                <div className="icons">
+                                    <DiMongodb />
+                                    <p>MongoDB</p>
+
+                                </div>
+
                             </Col>
-                            <Col xs={2} md={3}>
-                                <DiNodejs />
-                                <p>Node</p>
+                            <Col lg={3}>
+                                <div className="icons">
+
+                                    <SiExpress />
+                                    <p>Express</p>
+
+                                </div>
+
                             </Col>
-                            <Col xs={2} md={3}>
-                                <SiExpress />
-                                <p>Express</p>
+                            <Col lg={3}>
+                                <div className="icons">
+
+
+                                    <DiReact />
+                                    <p>React</p>
+                                </div>
+
                             </Col>
-                            <Col xs={2} md={3}>
-                                <SiExpress />
-                                <p>Express</p>
+                            <Col lg={3}>
+                                <div className="icons">
+
+                                    <DiNodejs />
+                                    <p>Node</p>
+                                </div>
+
                             </Col>
                         </Row>
                     </Col>

@@ -13,6 +13,14 @@ const Navigation = () => {
 
     function scrollHandler() {
         if (window.scrollY >= 20) {
+            if (window.scrollY >= 4650) {
+                document.querySelector("#casa").classList.add("claseDEBorrar")
+                updateNavbar(true);
+
+            } else {
+                document.querySelector("#casa").classList.remove("claseDEBorrar")
+
+            }
             updateNavbar(true);
         } else {
             updateNavbar(false);
@@ -25,7 +33,7 @@ const Navigation = () => {
 
     return (
         <Container>
-            <Navbar className={navColour ? "sticky" : "navbar"} collapseOnSelect expand="lg" fixed='top'>
+            <Navbar id="casa" className={navColour ? "sticky" : "navbar"} collapseOnSelect expand="lg" fixed='top'>
                 <Container>
                     <Nav>
                         {pages.map((page, idx) => (

@@ -20,9 +20,10 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1f1f25;
   font-weight: 700;
   font-size: 60px;
+  overflow-y: hidden;
+  padding-bottom: 5px;
 }
 
 /* p span {
