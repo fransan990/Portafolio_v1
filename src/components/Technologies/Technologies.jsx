@@ -3,8 +3,14 @@ import { DiJsBadge, DiReact, DiNodejs, DiCss3, DiHtml5, DiMongodb } from "react-
 import { SiExpress } from "react-icons/si";
 import { BsBootstrapFill } from "react-icons/bs";
 import "./Technologies.css"
+import technologies from "../../config/technologies-config";
 
 const Technologies = () => {
+
+    const tech = () => {
+        // hacrlo funcion parecido a biografia para optimizar todo y poner la clase 
+
+    }
 
     return (
         <Row>
@@ -16,8 +22,26 @@ const Technologies = () => {
                     </Col>
                     <Col lg={10} className="mx-auto m-0 mb-5 text-center">
                         <Row>
+                            {
+                                technologies.map(({ icono, nombre, clase }) => {
+                                    return (
 
-                            <Col lg={3}>
+
+                                        <Col lg={3}>
+                                            <div className="icons">
+
+                                                <p className="text-{clase}">{icono}</p>
+                                                <p>{nombre}</p>
+                                            </div>
+
+                                        </Col>
+
+
+                                    )
+                                })
+                            }
+
+                            {/* <Col lg={3}>
                                 <div className="icons">
 
                                     <DiHtml5 />
@@ -78,7 +102,7 @@ const Technologies = () => {
                                     <p>Node</p>
                                 </div>
 
-                            </Col>
+                            </Col> */}
                         </Row>
                     </Col>
                 </Row>

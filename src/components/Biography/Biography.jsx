@@ -32,21 +32,25 @@ const Biography = () => {
         <Row>
             <Col lg={12}>
                 <div className="d-flex justify-content-around">
-                    {buttons.map(({ name, id }, idx) => (
-                        <button
-                            className={`col-3 button mx-2 ${idx ? "" : "selected"}`}
-                            value={id}
-                            onClick={clickButton}
-                        >
-                            {name}
-                        </button>
-                    ))}
+                    {buttons.map(({ name, id }, idx) => {
+
+                        return (
+                            <button
+                                className={`col-3 button mx-2 ${idx ? "" : "selected"}`}
+                                value={id}
+                                onClick={clickButton}
+                            >
+                                {name}
+                            </button>
+                        )
+                    })}
                 </div>
             </Col>
 
             <Col lg={12} className="text-start mt-5 ">
                 <Row>
                     {items?.map(({ id, nombre, tecnologias, descripcion }) => {
+
                         return (
                             <Col lg={12} key={id}>
                                 <p className="fw-bold">{nombre}</p>
