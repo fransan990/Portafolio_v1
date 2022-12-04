@@ -4,13 +4,35 @@ import { SiExpress } from "react-icons/si";
 import { BsBootstrapFill } from "react-icons/bs";
 import "./Technologies.css"
 import technologies from "../../config/technologies-config";
+import { useEffect } from "react"
+
 
 const Technologies = () => {
+
+
+    useEffect(() => {
+        //     //     // document.querySelectorAll(".icons p").classList.add("color").setAttribute('style', 'red');
+        tech()
+    }, []);
+
 
     const tech = () => {
         // hacrlo funcion parecido a biografia para optimizar todo y poner la clase 
 
+
+        // array que reciba valor del parametor y que se recorra
+
+
+        let color = document.querySelectorAll(".icons p")
+
+        color.forEach(element => {
+            element.style.color = "red";
+        });
+
+
+
     }
+
 
     return (
         <Row>
@@ -22,7 +44,7 @@ const Technologies = () => {
                     </Col>
                     <Col lg={10} className="mx-auto m-0 mb-5 text-center">
                         <Row>
-                            {
+                            {/* {
                                 technologies.map(({ icono, nombre, clase }) => {
                                     return (
 
@@ -30,7 +52,7 @@ const Technologies = () => {
                                         <Col lg={3}>
                                             <div className="icons">
 
-                                                <p className="text-{clase}">{icono}</p>
+                                                <p className="color">{icono}</p>
                                                 <p>{nombre}</p>
                                             </div>
 
@@ -39,9 +61,9 @@ const Technologies = () => {
 
                                     )
                                 })
-                            }
+                            }  */}
 
-                            {/* <Col lg={3}>
+                            <Col lg={3}>
                                 <div className="icons">
 
                                     <DiHtml5 />
@@ -102,7 +124,7 @@ const Technologies = () => {
                                     <p>Node</p>
                                 </div>
 
-                            </Col> */}
+                            </Col>
                         </Row>
                     </Col>
                 </Row>
