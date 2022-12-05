@@ -15,6 +15,8 @@ const Technologies = () => {
         tech()
     }, []);
 
+    const colors = [...new Set(technologies.filter(({ categoria }) => categoria))] //no funciona pero la idea es buena 
+
 
     const tech = () => {
         // hacrlo funcion parecido a biografia para optimizar todo y poner la clase 
