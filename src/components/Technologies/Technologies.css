@@ -30,3 +30,13 @@
 .color {
     color: white;
 }
+
+.html {
+    color: #e54c20
+}
+
+.css {
+    color: #304cdc
+}
+
+/* letra normal y cuando pones encima color del icono que ya se queda puesto icono azul y cuando este encima cambia las letras al mismo color que el icono */

@@ -10,32 +10,6 @@ import { useEffect } from "react"
 const Technologies = () => {
 
 
-    useEffect(() => {
-        //     //     // document.querySelectorAll(".icons p").classList.add("color").setAttribute('style', 'red');
-        tech()
-    }, []);
-
-    const colors = [...new Set(technologies.filter(({ categoria }) => categoria))] //no funciona pero la idea es buena 
-
-
-    const tech = () => {
-        // hacrlo funcion parecido a biografia para optimizar todo y poner la clase 
-
-
-        // array que reciba valor del parametor y que se recorra
-
-
-        let color = document.querySelectorAll(".icons p")
-
-        color.forEach(element => {
-            element.style.color = "red";
-        });
-
-
-
-    }
-
-
     return (
         <Row>
             <Col lg={12} className="TechnologiesPosition" >
@@ -46,27 +20,9 @@ const Technologies = () => {
                     </Col>
                     <Col lg={10} className="mx-auto m-0 mb-5 text-center">
                         <Row>
-                            {/* {
-                                technologies.map(({ icono, nombre, clase }) => {
-                                    return (
-
-
-                                        <Col lg={3}>
-                                            <div className="icons">
-
-                                                <p className="color">{icono}</p>
-                                                <p>{nombre}</p>
-                                            </div>
-
-                                        </Col>
-
-
-                                    )
-                                })
-                            }  */}
 
                             <Col lg={3}>
-                                <div className="icons">
+                                <div className="icons html">
 
                                     <DiHtml5 />
                                     <p>HTML</p>
@@ -74,7 +30,7 @@ const Technologies = () => {
 
                             </Col>
                             <Col lg={3} >
-                                <div className="icons">
+                                <div className="icons css">
                                     <DiCss3 />
                                     <p>CSS</p>
                                 </div>
