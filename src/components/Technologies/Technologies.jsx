@@ -22,36 +22,36 @@ const Technologies = () => {
                         <Row>
 
                             <Col lg={3}>
-                                <div className="icons html">
+                                <div className="icons">
 
-                                    <DiHtml5 />
+                                    <p className="html"><DiHtml5 /></p>
                                     <p>HTML</p>
                                 </div>
 
                             </Col>
                             <Col lg={3} >
-                                <div className="icons css">
-                                    <DiCss3 />
+                                <div className="icons">
+                                    <p className="css"><DiCss3 /></p>
                                     <p>CSS</p>
                                 </div>
                             </Col>
                             <Col lg={3}>
                                 <div className="icons">
-                                    <DiJsBadge />
+                                    <p className="javaScript"><DiJsBadge /></p>
                                     <p>JavaScript</p>
                                 </div>
                             </Col>
                             <Col lg={3}>
                                 <div className="icons">
 
-                                    <BsBootstrapFill />
+                                    <p className="boostrap"><BsBootstrapFill /></p>
                                     <p>Boostrap</p>
                                 </div>
 
                             </Col>
                             <Col lg={3}>
                                 <div className="icons">
-                                    <DiMongodb />
+                                    <p className="mongoDb"><DiMongodb /></p>
                                     <p>MongoDB</p>
 
                                 </div>

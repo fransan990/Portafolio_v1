@@ -1,7 +1,3 @@
-/* .icons {
-    justify-content: space-around;
-} */
-
 .icons {
     font-size: 2.5em;
     justify-content: center;
@@ -25,11 +21,17 @@
     overflow: hidden;
     border: none;
     background: #000;
+    color: white;
+
+
 }
 
-.color {
-    color: white;
+.icons p:nth-child(2) {
+    font-size: 53px;
+    display: none;
 }
+
+
 
 .html {
     color: #e54c20
@@ -37,6 +39,18 @@
 
 .css {
     color: #304cdc
+}
+
+.javaScript {
+    color: #efd81b;
+}
+
+.boostrap {
+    color: #6f12ea
+}
+
+.mongoDb {
+    color: #4faa41;
 }
 
 /* letra normal y cuando pones encima color del icono que ya se queda puesto icono azul y cuando este encima cambia las letras al mismo color que el icono */
