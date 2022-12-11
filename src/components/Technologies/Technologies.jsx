@@ -60,7 +60,7 @@ const Technologies = () => {
                             <Col lg={3}>
                                 <div className="icons">
 
-                                    <SiExpress />
+                                    <p className="express"><SiExpress /></p>
                                     <p>Express</p>
 
                                 </div>
@@ -70,7 +70,7 @@ const Technologies = () => {
                                 <div className="icons">
 
 
-                                    <DiReact />
+                                    <p className="react"><DiReact /></p>
                                     <p>React</p>
                                 </div>
 
@@ -78,7 +78,7 @@ const Technologies = () => {
                             <Col lg={3}>
                                 <div className="icons">
 
-                                    <DiNodejs />
+                                    <p className="node"><DiNodejs /></p>
                                     <p>Node</p>
                                 </div>
 

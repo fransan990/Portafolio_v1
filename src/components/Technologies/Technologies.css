@@ -53,4 +53,16 @@
     color: #4faa41;
 }
 
+.express {
+    color: #353535;
+}
+
+.react {
+    color: #5ccfee;
+}
+
+.node {
+    color: #66b947;
+}
+
 /* letra normal y cuando pones encima color del icono que ya se queda puesto icono azul y cuando este encima cambia las letras al mismo color que el icono */
